@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Retrofit-LoL</string>
+
+    <!-- Lista -->
+    <string name="champions_title">Campeones</string>
+    <string name="search_placeholder">Buscar por nombre o título</string>
+    <string name="clear_search">Borrar búsqueda</string>
+    <string name="filter_version">Parche</string>
+    <string name="filter_language">Idioma</string>
+    <string name="role_all">Todos</string>
+    <string name="results_count">%1$d campeones</string>
+    <string name="end_of_list">Llegaste al final de la lista</string>
+    <string name="empty_results">Ningún campeón coincide con la búsqueda</string>
+    <string name="difficulty_label">Dificultad %1$d/10</string>
+
+    <!-- Roles -->
+    <string name="role_fighter">Luchador</string>
+    <string name="role_tank">Tanque</string>
+    <string name="role_mage">Mago</string>
+    <string name="role_assassin">Asesino</string>
+    <string name="role_marksman">Tirador</string>
+    <string name="role_support">Soporte</string>
+
+    <!-- Detalle -->
+    <string name="back">Volver</string>
+    <string name="detail_ratings">Valoraciones</string>
+    <string name="detail_attack">Ataque</string>
+    <string name="detail_defense">Defensa</string>
+    <string name="detail_magic">Magia</string>
+    <string name="detail_difficulty">Dificultad</string>
+    <string name="detail_stats">Estadísticas base</string>
+    <string name="stat_hp">Vida</string>
+    <string name="stat_mana">Recurso</string>
+    <string name="stat_armor">Armadura</string>
+    <string name="stat_magic_resist">Resist. mágica</string>
+    <string name="stat_attack_damage">Daño de ataque</string>
+    <string name="stat_attack_speed">Vel. de ataque</string>
+    <string name="stat_move_speed">Vel. de movimiento</string>
+    <string name="stat_attack_range">Alcance</string>
+    <string name="detail_abilities">Habilidades</string>
+    <string name="ability_cooldown">Enfriamiento: %1$s s</string>
+    <string name="detail_skins">Aspectos (%1$d)</string>
+    <string name="detail_lore">Historia</string>
+    <string name="detail_ally_tips">Consejos para jugarlo</string>
+    <string name="detail_enemy_tips">Consejos para enfrentarlo</string>
+    <string name="detail_resource">Recurso: %1$s</string>
+
+    <!-- Conexión y errores -->
+    <string name="status_online">En línea</string>
+    <string name="status_offline">Sin conexión</string>
+    <string name="offline_banner">Estás sin conexión. Se muestran los datos ya cargados.</string>
+    <string name="retry">Reintentar</string>
+    <string name="error_no_connection">No hay conexión a internet. Revisa tu red e inténtalo de nuevo.</string>
+    <string name="error_not_found">Estos datos no existen para el parche o idioma elegido.</string>
+    <string name="error_server">El servidor de Riot respondió con un error (%1$d).</string>
+    <string name="error_unknown">Ocurrió un error inesperado al leer los datos.</string>
+    <string name="error_load_more">No se pudo cargar la siguiente página.</string>
+</resources>

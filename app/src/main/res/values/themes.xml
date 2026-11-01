@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema oscuro base: evita un destello blanco antes de que cargue Compose. -->
+    <style name="Theme.RetrofitLoL" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#FF010A13</item>
+    </style>
+</resources>
