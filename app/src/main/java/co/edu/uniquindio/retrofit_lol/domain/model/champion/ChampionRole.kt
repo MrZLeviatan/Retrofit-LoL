@@ -13,6 +13,7 @@ enum class ChampionRole(val apiTag: String) {
 
     companion object {
         // Convierte el tag de la API en un rol; los tags desconocidos se ignoran (null).
+        // Busca el rol que coincida con el texto de la API (sin importar mayúsculas/minúsculas) o devuelve null si no existe
         fun fromApiTag(tag: String): ChampionRole? = entries.firstOrNull { it.apiTag.equals(tag, ignoreCase = true) }
     }
 }

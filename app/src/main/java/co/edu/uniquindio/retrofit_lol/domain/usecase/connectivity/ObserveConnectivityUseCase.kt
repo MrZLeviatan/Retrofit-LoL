@@ -11,5 +11,7 @@ class ObserveConnectivityUseCase(
     // Inyecta el repositorio de conectividad.
     private val connectivityRepository: ConnectivityRepository
 ) {
+    // Sobrescribe el operador 'invoke' para permitir ejecutar la clase como si fuera una función,
+    // devolviendo un Flow reactivo booleano (true si hay conexión, false si no hay internet)
     operator fun invoke(): Flow<Boolean> = connectivityRepository.isOnline
 }
