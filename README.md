@@ -3,16 +3,12 @@
 
 <br>
 
-### Presentación del grupo
+> **Universidad del Quindío**  
+> **Programa:** Ingeniería de Sistemas y Computación  
+> **Curso:** Desarrollo de Aplicaciones para Dispositivos Móviles (2026-2)  
+> **Autores:** Jhon Stivenson Mendez, Nicolas Cabrera Serrano, Robinson Daniel Gañan
 
-| Integrante |
-|---|
-| _Nicolas Cabrera Serano_ |
-| _Robinson Daniel Gañan_ |
-| _Jhon Stivenson Mendez_ |
-
-**Universidad del Quindío** — Desarrollo de Aplicaciones Móviles.
-**Actividad:** Consumo de APIs REST en Android.
+<br>
 
 ### ¿Qué hace la app?
 
@@ -24,6 +20,8 @@ Retrofit-LoL permite explorar los campeones de League of Legends con datos ofici
 - **Detalle del campeón**: splash art, valoraciones, estadísticas base, pasiva y habilidades (Q, W, E, R), aspectos, historia y consejos.
 - **Indicador de conexión**: píldora "En línea / Sin conexión" y franja roja cuando no hay red; al volver la conexión se reintenta lo que falló.
 - **Manejo de errores**: sin conexión, recurso no encontrado (404) y error del servidor, cada uno con su mensaje y botón **Reintentar**.
+
+<br>
 
 ### Entorno de desarrollo
 
@@ -37,6 +35,8 @@ Retrofit-LoL permite explorar los campeones de League of Legends con datos ofici
 | `minSdk` | 24 (Android 7.0) |
 | UI | Jetpack Compose (BOM 2026.09.00) + Material 3 |
 
+<br>
+
 **Librerías principales**
 
 | Librería | Uso |
@@ -49,6 +49,8 @@ Retrofit-LoL permite explorar los campeones de League of Legends con datos ofici
 | Coroutines + StateFlow | Asincronía y estado de la UI |
 
 **Permisos:** `INTERNET` (peticiones a la API e imágenes) y `ACCESS_NETWORK_STATE` (indicador online/offline).
+
+<br>
 
 **Ejecución**
 
@@ -85,6 +87,8 @@ Desde la terminal también se puede compilar el APK y correr las pruebas unitari
 | 3 | `GET cdn/{version}/data/{language}/champion.json` | `version`, `language` | Objeto con `data`: mapa `id → campeón` con información básica | Lista de campeones |
 | 4 | `GET cdn/{version}/data/{language}/champion/{championId}.json` | `version`, `language`, `championId` | Objeto con `data`: el campeón con historia, habilidades, aspectos y estadísticas | Pantalla de detalle |
 
+<br>
+
 ### Parámetros
 
 | Parámetro | Descripción | Ejemplo | De dónde sale |
@@ -92,6 +96,8 @@ Desde la terminal también se puede compilar el APK y correr las pruebas unitari
 | `version` | Parche del juego | `16.21.1` | Endpoint 1 |
 | `language` | Código de idioma y región | `es_MX`, `en_US` | Endpoint 2 |
 | `championId` | Identificador interno del campeón (puede diferir del nombre visible) | `Ahri`, `MonkeyKing` (Wukong) | Campo `id` del endpoint 3 |
+
+<br>
 
 ### Ejemplos de respuesta
 
@@ -135,6 +141,8 @@ Desde la terminal también se puede compilar el APK y correr las pruebas unitari
 }
 ```
 
+<br>
+
 ### Imágenes
 
 La API solo devuelve el nombre del archivo; la app construye la URL completa:
@@ -145,6 +153,8 @@ La API solo devuelve el nombre del archivo; la app construye la URL completa:
 | Splash art (aspecto) | `cdn/img/champion/splash/{id}_{num}.jpg` |
 | Habilidad | `cdn/{version}/img/spell/{image.full}` |
 | Pasiva | `cdn/{version}/img/passive/{image.full}` |
+
+<br>
 
 ### Búsqueda, filtros y paginación
 
@@ -177,6 +187,8 @@ Retrofit-LoL/
 ├── settings.gradle.kts      → Repositorios y módulos incluidos
 └── gradle.properties        → Opciones de Gradle
 ```
+
+<br>
 
 ### Código fuente — `app/src/main/java/co/edu/uniquindio/retrofit_lol/`
 
