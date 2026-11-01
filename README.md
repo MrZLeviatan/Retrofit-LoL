@@ -3,14 +3,13 @@
 
 <br>
 
-## 1. Entorno e introducción
-
 ### Presentación del grupo
 
-| Integrante | Código | GitHub |
-|---|---|---|
-| _Nombre completo_ | _Código_ | [@usuario](https://github.com/usuario) |
-| _Nombre completo_ | _Código_ | [@usuario](https://github.com/usuario) |
+| Integrante |
+|---|
+| _Nicolas Cabrera Serano_ |
+| _Robinson Daniel Gañan_ |
+| _Jhon Stivenson Mendez_ |
 
 **Universidad del Quindío** — Desarrollo de Aplicaciones Móviles.
 **Actividad:** Consumo de APIs REST en Android.
